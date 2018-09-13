@@ -22,7 +22,7 @@ PHP 7.x FPM personnal configuration and pool templates on Debian linux distribut
 
 I do not modify any PHP configuration files. I just add new configuration files to override the default PHP configuration.
 
-PHP includes a central configuration file `/etc/php/7.x/fpm/php.ini` and, then, the particular configuration snippets (`/etc/php/7.x/fpm/conf.d/\*.ini`) which manage the modules.
+PHP includes a central configuration file `/etc/php/7.x/fpm/php.ini` and, then, the particular configuration snippets (`/etc/php/7.x/fpm/conf.d/*.ini`) which manage the modules.
 
 PHP-FPM uses a central configuration file `/etc/php/7.x/fpm/php-fpm.ini` and configures the pools using conf files located in `/etc/php/7.x/fpm/pool.d/`
 
