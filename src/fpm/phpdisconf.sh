@@ -3,7 +3,6 @@
 ## -----------------------------------------------------
 ## Disable a PHP7.x-FPM pool configuration.
 ##
-## @version 20180811
 ## @author Olivier Jullien <https://github.com/ojullien>
 ## -----------------------------------------------------
 
