@@ -56,6 +56,8 @@ Each pool runs under is own user/group process (see [adduser](https://manpages.d
 
 ### How to setup the pools
 
+*Note: replace x by the minor version of PHP. Ex: php-fpm7.x -t becomes php-fpm7.2 -t*
+
 1. Copy all the [files and directories](/src/fpm) into /etc/php/7.x/fpm
 2. Move the default pool from `/etc/php/7.x/fpm/pool.d/www.conf` to `/etc/php/7.x/fpm/conf-available/www.conf`
 3. Make executable the `phpdisconf.sh` script file using `chmod u+x /etc/php/7.x/fpm/phpdisconf.sh`
@@ -64,7 +66,8 @@ Each pool runs under is own user/group process (see [adduser](https://manpages.d
 6. Enable yours FPM settings using `./phpenconf.sh 10-php-fpm`
 7. Edit the named like `/etc/php/7.x/fpm/conf-available/20-***.conf` files and make changes as you need.
 8. Enable the pools using `./phpenconf.sh 20-domain_01.tld 20-domain_02.tld`
-9. Restart the PHP-FPM using `systemctl restart php7.2-fpm.service`
+9. Test the validity of your php-fpm configuration syntax using `php-fpm7.x -t`
+10. Restart the PHP-FPM using `systemctl restart php7.x-fpm.service`
 
 ## Documentation
 
