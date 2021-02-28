@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## -----------------------------------------------------
-## Disable a PHP7.x-FPM pool configuration.
+## Disable a PHP-FPM pool configuration.
 ##
 ## @author Olivier Jullien <https://github.com/ojullien>
 ## -----------------------------------------------------
@@ -104,7 +104,7 @@ declare -i iReturn=1
 # At least one argument
 if (($# < 1)) || [[ -z "$1" ]]; then
     echo "Usage: $(basename "$0") <configuration 1> [configuration 2 ...]"
-    echo -e "\tDisable a PHP7.x-FPM pool configuration file."
+    echo -e "\tDisable a PHP8.x-FPM pool configuration file."
     echo -e "\t<configuration 1>\tPool configuration file."
     exit ${iReturn}
 fi
